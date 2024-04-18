@@ -1,0 +1,37 @@
+header{
+    nav{
+        background-color: map-get($pColores, color2 );
+        div{
+            .navbar-brand{
+                color: map-get($pColores, color4);
+                font-size: 2rem;
+                &:hover{
+                    color: map-get($pColores, color1);
+                }
+                img{
+                    color: map-get($pColores, color4);
+                    width: 30px;
+                    align-self: center;
+                    justify-self: center;
+                }
+            }
+            .anclas{
+                ul{
+                    gap: 2.75rem;
+                    text-align: center;
+                    li{
+                        a{
+                            font-size: 1.4rem;
+                            color: map-get($pColores, color4);
+                            text-decoration: underline;
+                            &:hover{
+                                color: map-get($pColores, color1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

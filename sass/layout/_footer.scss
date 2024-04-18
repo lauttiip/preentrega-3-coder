@@ -1,0 +1,24 @@
+footer{
+    div{
+        background-color: map-get($pColores , color3 );
+        padding: 10px 0;
+        text-align: center;
+        .contenedorFooter{
+            border-bottom: 3px solid black;
+            div{
+                h3{
+                    margin: 0;
+                }
+                div{
+                    a{
+                        color: map-get($pColores , color1 );
+                        font-size: 1.1rem;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/*utilities*/
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/*bases*/
+@import "./base/reset";
+@import "./base/typografias";
+
+/*layout*/
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+
+/*components*/
+@import "./components/cards";
+
+/*mediaQuerrys*/
+@import "./layout/mediaQuerry/media768";
+@import "./layout/mediaQuerry/media320";
