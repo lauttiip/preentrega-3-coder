@@ -25,7 +25,6 @@
         }
     }
     .infoCard{
-
         width: 50%;
         height: 100%;
         display: flex;
@@ -59,3 +58,40 @@
 .card3{
     @extend .card1;
 }
+
+
+.cardPlato {
+    width: 30%;
+    border: 1.5px solid map-get($pColores , color2 );
+    border-radius: 8px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    a{
+        color: map-get($pColores , color4);
+
+        img{
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            
+        }
+        div{
+            width: 100%;
+            height: 10%;
+            background-color: map-get($pColores , color2);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            p{
+            width: 100%;
+            margin: 0;
+            height: 100%;
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding: 5px;
+        }
+        }
+    }
+}
+
