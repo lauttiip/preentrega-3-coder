@@ -1,0 +1,77 @@
+.main-donaciones {
+    margin: 50px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerForm {
+        background-color: #D4CC9F;
+        padding: 20px;
+        border-radius: 10px;
+        width: 60%;
+
+        h2 {
+            color: map-get($pColores, color2);
+            font-size: 3rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            section {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                div {
+                    margin-bottom: 15px;
+                    width: 40%;
+
+                    label {
+                        margin-bottom: 5px;
+                        color: #40534F;
+                    }
+
+                    input[type="text"],
+                    input[type="tel"],
+                    input[type="email"],
+                    textarea,
+                    select {
+                        padding: 8px;
+                        border: 1px solid #D6BC42;
+                        border-radius: 5px;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+
+                    a {
+                        color: #40534F;
+                        text-decoration: underline;
+
+                        &:hover {
+                            color: #D6BC42;
+                        }
+                    }
+                }
+            }
+
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #D6BC42;
+                color: #40534F;
+                cursor: pointer;
+                font-size: 16px;
+                text-align: center;
+                &:hover {
+                    background-color: #D4CC9F;
+                }
+            }
+        }
+    }
+}

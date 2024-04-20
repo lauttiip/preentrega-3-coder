@@ -193,17 +193,82 @@ header nav {
     display: flex;
     justify-content: center;
     padding: 5px 0;
-    margin: 30px 0; }
+    margin: 20px 0;
+    height: 300px; }
     .main-platos section div {
-      width: 100%;
+      width: 80%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center; }
+      text-align: center;
+      border-right: 1px solid #FFF2E1;
+      border-left: 1px solid #FFF2E1; }
       .main-platos section div h2 {
-        text-align: end;
-        text-shadow: 0 1px 4px white; }
+        text-shadow: 0 1px 4px #7e7e7e;
+        font-size: 2.4rem;
+        color: #EAD8C0; }
+      .main-platos section div p {
+        color: #FFF2E1; }
+
+.main-donaciones {
+  margin: 50px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-donaciones .containerForm {
+    background-color: #D4CC9F;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; }
+    .main-donaciones .containerForm h2 {
+      color: #D1BB9E;
+      font-size: 3rem; }
+    .main-donaciones .containerForm form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-donaciones .containerForm form section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        .main-donaciones .containerForm form section div {
+          margin-bottom: 15px;
+          width: 40%; }
+          .main-donaciones .containerForm form section div label {
+            margin-bottom: 5px;
+            color: #40534F; }
+          .main-donaciones .containerForm form section div input[type="text"],
+          .main-donaciones .containerForm form section div input[type="tel"],
+          .main-donaciones .containerForm form section div input[type="email"],
+          .main-donaciones .containerForm form section div textarea,
+          .main-donaciones .containerForm form section div select {
+            padding: 8px;
+            border: 1px solid #D6BC42;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px; }
+          .main-donaciones .containerForm form section div a {
+            color: #40534F;
+            text-decoration: underline; }
+            .main-donaciones .containerForm form section div a:hover {
+              color: #D6BC42; }
+      .main-donaciones .containerForm form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #D6BC42;
+        color: #40534F;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: center; }
+        .main-donaciones .containerForm form button:hover {
+          background-color: #D4CC9F; }
 
 footer div {
   background-color: #EAD8C0;
