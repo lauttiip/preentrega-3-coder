@@ -1,0 +1,23 @@
+@media(max-width: 425px){
+    .main-platos{
+        h1{
+            font-size: 1.5rem;
+        }
+        section{
+            div{
+                width: 95%;
+            }
+    }
+    .cardPlato {
+        width: 90%;
+    }
+    }
+
+    .main-donaciones {
+        .containerForm{
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+}

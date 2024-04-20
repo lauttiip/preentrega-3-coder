@@ -1,85 +1,119 @@
-.body{
-    background-color: map-get($pColores , color1 );
+.body {
+    background-color: map-get($pColores , color1);
 }
-
-.main-index{
-    section{
+/*pagina principal*/
+.main-index {
+    section {
         display: flex;
         align-items: center;
         margin-top: 1.3125rem;
     }
 }
-.infoBreve{
-    h1{
+
+.infoBreve {
+    h1 {
         text-align: center;
-        color: map-get($pColores , color4);
+        color: map-get($pColores , color3);
         font-size: 4rem;
     }
-    p{
+
+    p {
         padding-top: .3125rem;
-        color: map-get($pColores , color3 );
+        color: map-get($pColores , color3);
         font-size: 1.3rem;
     }
 }
-.imgChef{
-    img{
+
+.imgChef {
+    img {
         border-radius: 10%;
+        
     }
-    
+
 }
-.iconStar{
+
+.iconStar {
     padding: 10px 0;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: map-get($pColores , color4 );
-    div{
-        img{
+    background-color: map-get($pColores , color2);
+
+    div {
+        img {
             width: 2.1875rem;
             height: auto;
         }
     }
 }
 
-.platosMichelin{
+.platosMichelin {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1.25rem 0;
     padding: 1.5625rem;
-    h2{
-        color: map-get($pColores , color3 );
+
+    h2 {
+        color: map-get($pColores , color3);
         text-align: center;
         font-size: 3rem;
         padding-bottom: .9375rem;
     }
-    div{
+
+    div {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
         row-gap: 10px;
-        div{
+        
+        div {
             width: 20.75rem;
             height: 19.75rem;
             display: flex;
             flex-direction: column;
-            img{    
+            
+            img {
                 width: 90%;
                 height: 80%;
-                box-shadow: 0px 0px 20px map-get($pColores , color3 );
                 object-fit: cover;
+                animation-name: borderRgb;
+                animation-iteration-count: infinite;
+                animation-duration: 4000ms;
+                animation-timing-function: linear;
+                animation-delay: 100ms;
+            @keyframes borderRgb {
+                0%{
+                    box-shadow: 3px -3px 10px map-get($pColores , color3);
+                }
+                25%{
+                    box-shadow: 3px 3px 10px map-get($pColores , color3);
+                }
+                50%{
+                    box-shadow: -3px 3px 10px map-get($pColores , color3);
+                }
+                90%{
+                    box-shadow: -3px -3px 10px map-get($pColores , color3);
+                }
+                100%{
+                    box-shadow: 3px -3px 10px map-get($pColores , color3);
+                }
             }
-            a{
+            }
+
+            a {
                 text-decoration: none;
-                p{
-                    strong{
+
+                p {
+                    strong {
                         font-size: 1.5rem;
-                        color: map-get($pColores , color4 );
-                        box-shadow: 0px 1px 10px map-get($pColores , color4 );;
+                        color: map-get($pColores , color4);
+                        box-shadow: 0px 1px 10px map-get($pColores , color4);
+                        ;
                         padding: 5px 5px;
                     }
                 }
@@ -88,3 +122,31 @@
     }
 }
 
+.scale-up-ver-center {
+    -webkit-animation: scale-up-ver-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-ver-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-ver-center {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}
+
+@keyframes scale-up-ver-center {
+    0% {
+        -webkit-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+}

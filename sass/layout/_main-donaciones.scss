@@ -1,18 +1,19 @@
+/*pagina donaciones*/
 .main-donaciones {
     margin: 50px 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 70vh;
     .containerForm {
-        background-color: #D4CC9F;
+        background-color: map-get($pColores, color2);
         padding: 20px;
         border-radius: 10px;
         width: 60%;
 
         h2 {
-            color: map-get($pColores, color2);
+            color: map-get($pColores, color3);
             font-size: 3rem;
         }
 
@@ -33,7 +34,7 @@
 
                     label {
                         margin-bottom: 5px;
-                        color: #40534F;
+                        color: map-get($pColores, color0);
                     }
 
                     input[type="text"],
@@ -63,13 +64,13 @@
                 padding: 10px 20px;
                 border: none;
                 border-radius: 5px;
-                background-color: #D6BC42;
-                color: #40534F;
+                background-color: map-get($pColores, color3);
+                color: map-get($pColores, color0);
                 cursor: pointer;
                 font-size: 16px;
                 text-align: center;
                 &:hover {
-                    background-color: #D4CC9F;
+                    background-color: map-get($pColores, color1);
                 }
             }
         }

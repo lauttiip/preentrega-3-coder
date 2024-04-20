@@ -1,97 +1,134 @@
-
-.card1{
+/*pagina blog card*/
+.card1 {
     display: flex;
     flex-direction: row;
     width: 80%;
     height: 26.5rem;
-    align-items: center;   
+    align-items: center;
     gap: 10px;
-    border-right:  3px  solid map-get($pColores , color4);
-    border-left:  3px  solid map-get($pColores , color4);
+    border-right: 3px solid map-get($pColores , color3);
+    border-left: 3px solid map-get($pColores , color3);
     padding: 0 15px;
     justify-content: center;
     margin-bottom: 30px;
-    div{
+    animation-name: borderRgbCard;
+    animation-iteration-count: infinite;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-delay: 100ms;
 
+    @keyframes borderRgbCard {
+        0% {
+            box-shadow: 4px -4px 30px map-get($pColores , color3);
+        }
+
+        25% {
+            box-shadow: 4px 4px 30px map-get($pColores , color3);
+        }
+
+        50% {
+            box-shadow: -4px 4px 30px map-get($pColores , color3);
+        }
+
+        90% {
+            box-shadow: -4px -4px 30px map-get($pColores , color3);
+        }
+
+        100% {
+            box-shadow: 4px -4px 30px map-get($pColores , color3);
+        }
+    }
+
+    div {
         width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
-        img{
+
+        img {
             width: 90%;
             height: 90%;
             border-radius: 10%;
-            box-shadow: 0px -1px 5px 5px  map-get($pColores , color2);
+            box-shadow: 0px -1px 5px 5px map-get($pColores , color2);
         }
     }
-    .infoCard{
+
+    .infoCard {
         width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2{
+
+        h2 {
             text-align: center;
             font-size: 3rem;
             color: map-get($pColores , color4);
         }
-        p{
-        width: 100%;
-        color:map-get($pColores , color3);
-        font-size: 1.2rem;
+
+        p {
+            width: 100%;
+            color: map-get($pColores , color3);
+            font-size: 1.2rem;
         }
     }
 }
 
-.card2{
+.card2 {
     @extend .card1;
-    div{
+
+    div {
         order: 2;
         display: flex;
         justify-content: flex-end;
     }
-    .infoCard{
+
+    .infoCard {
         order: 1;
     }
 }
-.card3{
+
+.card3 {
     @extend .card1;
 }
 
-
+/*pagina platos card*/
 .cardPlato {
     width: 30%;
-    border: 1.5px solid map-get($pColores , color2 );
+    border: 1.5px solid map-get($pColores , color2);
     border-radius: 8px;
-    height: 450px;
+    height:auto;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    a{
-        color: map-get($pColores , color4);
 
-        img{
+    a {
+        color: map-get($pColores , color3);
+
+        img {
             width: 100%;
             height: 90%;
             object-fit: cover;
-            
+
         }
-        div{
+
+        div {
             width: 100%;
             height: 10%;
             background-color: map-get($pColores , color2);
             text-align: center;
             display: flex;
             align-items: center;
-            p{
-            width: 100%;
-            margin: 0;
-            height: 100%;
-            font-weight: bold;
-            font-size: 1.5rem;
-            padding: 5px;
-        }
+
+            p {
+                width: 100%;
+                margin: 0;
+                height: 100%;
+                font-weight: bold;
+                font-size: 1.5rem;
+                padding: 5px;
+                color: map-get($pColores , color3);
+            }
         }
     }
 }
-

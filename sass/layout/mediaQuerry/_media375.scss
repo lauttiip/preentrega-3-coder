@@ -1,0 +1,19 @@
+@media(max-width: 375px){
+    .card1{
+        div{
+            padding: 10px 0;
+            width: 90%;
+            img{
+                width: 100%;
+            }
+        }
+        .infoCard{
+            width: 95%;
+        }
+    }
+    .main-platos{
+        h1{
+            font-size: 1.25rem;
+        }
+    }
+}

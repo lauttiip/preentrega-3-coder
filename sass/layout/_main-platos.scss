@@ -1,3 +1,4 @@
+/*pagina platos */
 .main-platos{
     width: 100%;
     display: flex;
@@ -5,7 +6,7 @@
     align-items: center;
     margin-top: 1.25rem;
     h1{
-        color: map-get($pColores , color4 );
+        color: map-get($pColores , color3 );
         text-decoration: overline;
         box-shadow: 0 -6px 10px black;
     }
@@ -44,5 +45,35 @@
                 color: map-get($pColores , color4 );
             }
         }
+    }
+}
+
+
+.scale-up-hor-center {
+    -webkit-animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@keyframes scale-up-hor-center {
+    0% {
+        -webkit-transform: scaleX(0.4);
+        transform: scaleX(0.4);
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 }
